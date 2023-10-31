@@ -1,0 +1,197 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('starry-night-sky.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body h1 {
+    margin-top: 50px;
+    position: relative;
+}
+body h1:after{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: white;
+    position: absolute;
+    bottom: -6px;
+    left: 0px;
+
+}
+#main{
+    transform: rotateX(60deg);
+    position: relative;
+    width: 600px;
+    height: 600px;
+    scale: 1.5  ;
+
+}
+#orbit{
+    
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    animation: rotate 60s linear infinite forwards;
+   
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+#orbit:nth-child(2){
+    width: 420px;
+    height: 420px;
+    top: 90px;
+    left: 90px;
+    animation-duration: 70s;
+   
+}
+#orbit:nth-child(3){
+    width: 350px;
+    height: 350px;
+    top: 125px;
+    left: 125px;
+    animation-duration: 40s;
+}
+#orbit:nth-child(4){
+    width: 290px;
+    height: 290px;
+    top: 155px;
+    left: 155px;
+    animation-duration: 30s;
+}
+#orbit:nth-child(5){
+    width: 240px;
+    height: 240px;
+    top: 180px;
+    left: 180px;
+    animation-duration: 15s;
+}
+#orbit:nth-child(6){
+    width: 200px;
+    height: 200px;
+    top: 200px;
+    left: 200px;
+    animation-duration: 8s;
+}
+#orbit:nth-child(7){
+    width: 160px;
+    height: 160px;
+    top: 220px;
+    left: 220px;
+    animation-duration: 5s;
+}
+#orbit:nth-child(8){
+    width: 120px;
+    height: 120px;
+    top: 240px;
+    left: 240px;
+    animation-duration: 6s;
+}
+
+.sun{
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(red, rgb(210, 228, 11));
+    border-radius: 50%;
+    position: absolute;
+    top: 265px;
+    left: 265px;
+    border-radius: 50%;
+    box-shadow: 0 0 500px rgb(213, 10, 10);
+}
+
+.planet1{
+    position: absolute;
+    top:29%;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.planet2{
+    position: absolute;
+    top:29%;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(30, 174, 68);
+    border-radius: 50%;
+}
+.planet3{
+    position: absolute;
+    top: 20%;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(225, 105, 7);
+    border-radius: 50%;
+}
+.planet4{
+    position: absolute;
+    top: 67%;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(13, 204, 238);
+    border-radius: 50%;
+}
+.planet5{
+    position: absolute;
+    top: 30%;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(108, 5, 181);
+    border-radius: 50%;
+}
+.planet6{
+    position: absolute;
+    top: 67%;
+    width: 22px;
+    height: 22px;
+    background-color: rgb(14, 235, 176);
+    border-radius: 50%;
+}
+.planet7{
+    position: absolute;
+    top: 18%;
+    width: 22px;
+    height: 22px;
+    background-color: rgb(221, 221, 12);
+    border-radius: 50%;
+}
+.planet8{
+    position: absolute;
+    top: 67%;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(105, 150, 233);
+    border-radius: 50%;
+}
+
+@media only screen and (max-width:600px){
+    #main{
+        transform: rotateX(45deg) scale(0.4);
+    }
+    
+}
